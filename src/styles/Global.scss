@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../assets/GoogleSans-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../assets/GoogleSans-Regular.ttf');
+    font-weight: 400;
+}
+
+:root {
+    --black-0: #131314;
+    --black-1: #1e1f20;
+    --black-2: #1a1a1c;
+
+    --gradient: linear-gradient(74deg, #637bf0, #fc6382);
+
+    color-scheme: dark;
+}
+
+html,
+body {
+    font-family: 'Google Sans';
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+button, input {
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.app-styled {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: var(--black-0);
+}
+
+@import './Sidebar.scss';
+@import './Home.scss';
+@import './Navbar.scss';
+@import './Search.scss';
